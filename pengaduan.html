@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Daftar Pengaduan</title>
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,600,700,800&amp;display=swap">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" >
+
+        <style>
+            .nav-tabs .nav-link {
+                color:#112D4E;
+            }
+        
+            .nav-tabs .nav-link.active {
+                color:#112D4E;
+                font-weight: bold;
+            }
+        
+            .nav-tabs .nav-link:hover {
+                color:#3F72AF;
+            }
+        </style>
+        
+    </head>
+
+<body style="--bs-primary: #3F72AF;--bs-primary-rgb: 63,114,175;--bs-info: #F9F7F7;--bs-info-rgb: 249,247,247;--bs-dark: #112D4E;--bs-dark-rgb: 17,45,78;font-family: 'Work Sans', sans-serif;">
+    <nav class="navbar navbar-expand-md bg-info" style="--bs-body-bg: #112D4E;">
+        <div class="container-fluid mt-2">
+            <img style="width: 150px;height: 100px;margin-left: 30px;" src="img/FORMAT REAL.png" width="100" height="100">
+            <button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1">
+                <span class="visually-hidden">Toggle navigation</span>
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="navbar-nav ms-auto fs-3" style="font-size:20px; color: var(--bs-navbar-brand-color);">
+                    <li class="nav-item">
+                        <a class="nav-link active fs-4 link-dark" href="index.html" style="color: rgb(0,0,0);">Home</a>
+                    </li>
+                    <li class="nav-item fs-4 text-info">
+                        <a class="nav-link fs-4 link-dark" href="pengaduan.html">Daftar Pengaduan</a>
+                    </li>
+                    <li class="nav-item fs-4 text-info">
+                        <a class="nav-link fs-4 fw-bold link-dark" href="login.html">Login/Sign In</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-5">
+        <h2 class="text-center mb-4" style="font-weight: bold;">Daftar Laporan</h2>
+        <div class="d-flex justify-content-start mb-4">
+            <div class="container mt-4">
+                <button class="btn mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDropdown" aria-expanded="false" aria-controls="collapseDropdown" style="background-color: #112D4E; color: #F9F7F7;">
+                    Pilih Jenis Laporan
+                </button>
+                <div class="collapse" id="collapseDropdown">
+                    <div class="card" style="background-color: #112D4E;">
+                        <ul class="list-group" >
+                            <li class="list-group-item"><a href="pengaduan.html" style="text-decoration: none; color: #3F72AF;">Laporan Publik</a></li>
+                            <li class="list-group-item"><a href="rahasia.html" style="text-decoration: none; color:#3F72AF">Laporan Privat</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="aspirasi-tab" data-bs-toggle="tab" data-bs-target="#aspirasi" type="button" role="tab" aria-controls="aspirasi" aria-selected="true">Laporan Aspirasi</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pengaduan-tab" data-bs-toggle="tab" data-bs-target="#pengaduan" type="button" role="tab" aria-controls="pengaduan" aria-selected="false">Laporan Pengaduan</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="permintaan-tab" data-bs-toggle="tab" data-bs-target="#permintaan" type="button" role="tab" aria-controls="permintaan" aria-selected="false">Permintaan Aspirasi</button>
+                </li>
+            </ul>
+    <div class="tab-content mt-3" id="myTabContent">
+        <div class="tab-pane fade show active" id="aspirasi" role="tabpanel" aria-labelledby="aspirasi-tab" >
+            <div class="table-responsive">
+                <table class="table table-bordered table-striped table-hover">
+                    <thead class="table-secodary">
+                    <tr>
+                        <th>No</th>
+                        <th>Judul</th>
+                        <th>Isi Laporan</th>
+                        <th>Tanggal Laporan</th>
+                        <th>Lokasi</th>
+                        <th>Instansi Tujuan</th>
+                        <th>Lampiran</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Pemaksimalan saran Transportasi</td>
+                        <td>Mohon penambahan halte di area depan kampus</td>
+                        <td>2024-12-22</td>
+                        <td>Jl. BTP</td>
+                        <td>Politeknik Negeri Ujung Pandang</td>
+                        <td><a href="#" class="btn btn-sm" style="background-color: #112D4E; color: #F9F7F7;">Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Pemaksimalan saran Transportasi</td>
+                        <td>Mohon penambahan halte di area depan kampus</td>
+                        <td>2024-12-22</td>
+                        <td>Jl. BTP</td>
+                        <td>Politeknik Negeri Ujung Pandang</td>
+                        <td><a href="#" class="btn btn-sm" style="background-color: #112D4E; color: #F9F7F7;">Download</a></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    <!-- Laporan Pengaduan -->
+    <div class="tab-pane fade" id="pengaduan" role="tabpanel" aria-labelledby="pengaduan-tab">
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped table-hover">
+                <thead class="table-secodary">
+                <tr>
+                    <th>No</th>
+                    <th>Judul</th>
+                    <th>Isi Laporan</th>
+                    <th>Tanggal Laporan</th>
+                    <th>Lokasi</th>
+                    <th>Instansi Tujuan</th>
+                    <th>Lampiran</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Kebocoran Pipa</td>
+                    <td>Terdapat kebocoran pipa di gedung elektro</td>
+                    <td>2024-12-25</td>
+                    <td>Gedung Elektro</td>
+                    <td>Politeknik Negeri Ujung Pandang</td>
+                    <td><a href="#" class="btn btn-sm" style="background-color: #112D4E; color: #F9F7F7;">Download</a></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Kebocoran Pipa</td>
+                    <td>Terdapat kebocoran pipa di gedung elektro</td>
+                    <td>2024-12-25</td>
+                    <td>Gedung Elektro</td>
+                    <td>Politeknik Negeri Ujung Pandang</td>
+                    <td><a href="#" class="btn btn-sm" style="background-color: #112D4E; color: #F9F7F7;">Download</a></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+<!-- Permintaan Aspirasi -->
+    <div class="tab-pane fade" id="permintaan" role="tabpanel" aria-labelledby="permintaan-tab">
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped table-hover">
+                <thead class="table-secodary">
+                <tr>
+                    <th>No</th>
+                    <th>Judul</th>
+                    <th>Isi</th>
+                    <th>Tanggal Permintaan</th>
+                    <th>Lokasi</th>
+                    <th>Instansi Tujuan</th>
+                    <th>Lampiran</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Penambahan Lampu Jalan</td>
+                    <td>Mohon dipasang lampu jalan di area gerbang BTP</td>
+                    <td>2024-12-23</td>
+                    <td>Jl.BTP</td>
+                    <td>Bapak Lurah</td>
+                    <td><a href="#" class="btn btn-sm" style="background-color: #112D4E; color: #F9F7F7;">Download</a></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Penambahan Lampu Jalan</td>
+                    <td>Mohon dipasang lampu jalan di area gerbang BTP</td>
+                    <td>2024-12-23</td>
+                    <td>Jl.BTP</td>
+                    <td>Bapak lurah</td>
+                    <td><a href="#" class="btn btn-sm" style="background-color: #112D4E; color: #F9F7F7;">Download</a></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+</div>
+<div class="container-fluid mt-5 text-center py-4">
+    <p>&copy; 2024 SBP-TMJPNUP </p>
+    <div class="d-flex justify-content-center"></div>
+    <a href="https://www.instagram.com/iyyoo_aja" style="text-decoration: none; color: inherit;"><i class="bi bi-instagram" style="text-decoration: none;"></i> iyyoo_aja</a>
+    <a href="https://youtube.com/@baangjamall?si=7ZWSDAd4b3H9Yloo" style="color:inherit; text-decoration: none;"><i class="bi bi-youtube"></i> artgame inflix</a>
+    <a href="https://www.tiktok.com/@baangjamall?_t=ZS-8srSPSzhS9w&_r=1" style="color: inherit; text-decoration: none;"><i class="bi bi-tiktok"></i> baangjamall</a>
+</div>
+
+<script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
